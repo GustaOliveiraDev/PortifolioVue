@@ -34,7 +34,6 @@ export default {
   position: fixed;
   left: 50px;
   bottom: 0px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,11 +60,26 @@ export default {
   color: white;
 }
 
-
 .socialIcon:hover {
-  transition: 0.3s ;
-  padding-bottom:10px;
+  transition: 0.3s;
+  padding-bottom: 10px;
   color: #00b4ff;
-  
+
+}
+
+@media (max-width: 600px) {
+
+  /* .socialLine {
+    color: #00b4ff;
+  }
+
+  .socialMidia {
+    color: #00b4ff;
+  } */
+
+  .containerSocial {
+display: none;
+}
+
 }
 </style>

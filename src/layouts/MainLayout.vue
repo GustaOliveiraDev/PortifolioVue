@@ -1,10 +1,14 @@
 <template>
-  <q-layout @scroll="handleScroll()">
-    <q-header ref="headerL" elevated class="flex headerr ">
+  <q-layout>
+
+    <!-- <animacaoLoad /> -->
+
+    <q-header ref="headerL" elevated class="row col-12 col-md-12 headerr ">
       <q-toolbar class="flex primarioText justify-between">
 
         <q-avatar class="logo">
           <img src="../../public/imgs/AdobeStock_550513538_Preview.png">
+
         </q-avatar>
 
         <nav class="menu">
@@ -13,20 +17,47 @@
             <div class="rotas">Expêriencia</div>
             <div class="rotas">Trabalhos</div>
             <div class="rotas">Contato</div>
+            <div class="middle">
+              <a class="btn btn4">Currículo</a>
+            </div>
           </div>
 
-
-          <div class="middle">
-            <a class="btn btn4">Currículo</a>
+          <div class="toogueMenu">
+            <q-btn @click="drawer = !drawer" round icon="menu" />
           </div>
-
         </nav>
 
       </q-toolbar>
     </q-header>
+
+    <q-drawer class="drawer" v-model="drawer" :width="200" side="right">
+
+      <q-scroll-area class="fit">
+        <q-list >
+
+          <div class="middle">
+            <a class="btn btn4">Currículo</a>
+          </div>
+          <template v-for="(menuItem, index) in menuList" :key="index">
+            <q-item class="flex intems-center itemDrawer " v-ripple>
+
+              <q-item-section avatar>
+                <q-icon :name="menuItem.icon" />
+              </q-item-section>
+
+              <q-item-section>
+                {{ menuItem.label }}
+              </q-item-section>
+
+            </q-item>
+          </template>
+
+        </q-list>
+      </q-scroll-area>
+    </q-drawer>
+
     <q-page-container>
       <router-view />
-
     </q-page-container>
 
   </q-layout>
@@ -34,38 +65,50 @@
 
 <script>
 
+import { ref, } from 'vue'
+import animacaoLoad from '../../public/animacao/animacaoLoad.vue';
+
+const menuList = [
+  {
+    icon: 'fa-solid fa-address-card',
+    label: 'Sobre',
+    separator: false
+  },
+  {
+    icon: 'fa-solid fa-mountain',
+    label: 'Expêriencia',
+    separator: false
+  },
+  {
+    icon: 'fa-solid fa-diagram-project',
+    label: 'Trabalhos',
+    separator: false
+  },
+  {
+    icon: 'fa-solid fa-address-book',
+    label: 'Contatos',
+    separator: true
+  },
+
+
+]
+
 export default {
-
-  name: 'MainLayout',
-
-
   setup() {
+    let drawer = ref(false)
 
-    let vet = []
     return {
-      vet
+      drawer,
+      menuList
     }
   },
-  methods: {
 
-    handleScroll() {
-
-      this.vet.push(window.scrollY)
-      if (this.vet.length == 2) {
-        if (this.vet[1] > this.vet[0]) {
-          // this.$refs.headerL.classList.add('headerRelative');
-          this.$refs.headerL.classList = ['headerRelative']
-          //console.log(this.$refs.headerL = ['headerRelative'])
-        } else {
-          // this.$refs.headerL.classList.add('headerRelative');
-          // console.log('alto')
-        }
-        this.vet[0] = this.vet[1]
-        this.vet.pop();
-      }
-    }
+  components: {
+    // animacaoLoad,
   }
+
 }
+
 </script>
 
 <style>
@@ -79,7 +122,22 @@ export default {
 .headerr {
   height: 100px;
   position: fixed;
-  background: #0a192f;
+
+  background-color: #0a192f;
+}
+
+.toogueMenu {
+  display: none;
+}
+
+.drawer {
+  color: #00b4ff;
+  background-color: #0a192f;
+}
+
+.separador {
+
+  background-color: #00b4ff;
 }
 
 .headerRelative {
@@ -153,7 +211,7 @@ export default {
   color: white;
   font-size: 14px;
   text-decoration: none;
-  border: 2px solid #00b4ff;
+  border: 1px solid #00b4ff;
   padding: 10px;
   overflow: hidden;
   border-radius: 10px;
@@ -179,5 +237,40 @@ export default {
 
 .btn4:hover::before {
   height: 380%;
+}
+
+@media (max-width: 600px) {
+  .toogueMenu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .itemDrawer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+  }
+
+
+  .middle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 150px;
+    margin: 25px;
+    /* margin-top: 30px;
+    margin-bottom: 150px; */
+  }
+
+
+
 }
 </style>

@@ -1,12 +1,9 @@
 <template>
   <q-page class="flex flex-center primario ">
-
     <div class="container">
 
+      <!-- <animacaoLoad /> -->
 
-      
-
-      <sobreComponent />
       <sobreComponent />
       <sobreComponent />
       <sobreComponent />
@@ -24,6 +21,7 @@
 import sociaisIcon from 'src/components/sociaisIcon.vue';
 import sociaisEmail from '../components/sociaisEmail.vue';
 import sobreComponent from 'src/components/sobreComponent.vue';
+import animacaoLoad from '../../public/animacao/animacaoLoad.vue';
 
 export default {
   name: 'IndexPage',
@@ -31,12 +29,16 @@ export default {
     sociaisIcon,
     sociaisEmail,
     sobreComponent,
+    // animacaoLoad,
   }
 }
 </script>
 <style>
-.container {
 
-  padding: 300px;
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
 </style>

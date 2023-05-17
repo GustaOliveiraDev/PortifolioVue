@@ -58,4 +58,22 @@ export default {
     height: 200px;
     color: white;
 }
+
+@media (max-width: 600px) {
+
+    .containerSocialEmail {
+        display: none;
+    }
+
+    /* .socialLineEmail {
+    border-right: 1px solid;
+    height: 200px;
+    color: #00b4ff;
+}
+.socialEmail {
+    height: 150px;
+    color: #00b4ff;
+} */
+
+}
 </style>
