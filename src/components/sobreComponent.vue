@@ -1,5 +1,5 @@
 <template>
-  <div class="  conteudoSobre">
+  <div class="conteudoSobre">
 
     <div class=" text-normal">
       conteudoSobre
@@ -25,18 +25,26 @@ export default {
 
 <style>
 .conteudoSobre {
-  margin-top: 10vh;
-  margin-bottom: 50vh;
+  margin-top: 10em;
+  margin-bottom: 18em;
   align-items: start;
   width: 50vw;
-  /* border: 1px solid red; */
 }
-.text-titulo{
+
+.text-titulo {
   font-size: clamp(36px, 36px + 36px, 36px);
   color: white;
 }
-.text-normal{
+
+.text-normal {
   font-size: clamp(16px, 16px + 16px, 16px);
   color: #00b4ff;
+}
+
+@media (max-width: 600px) {
+  .conteudoSobre {
+    width: 80vw;
+  }
+
 }
 </style>

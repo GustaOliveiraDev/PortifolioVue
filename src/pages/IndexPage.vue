@@ -5,9 +5,10 @@
       <!-- <animacaoLoad /> -->
 
       <sobreComponent />
+      <aboutComponent />
+      <!-- <sobreComponent />
       <sobreComponent />
-      <sobreComponent />
-      <sobreComponent />
+      <sobreComponent /> -->
 
       <sociaisIcon />
       <sociaisEmail />
@@ -20,7 +21,10 @@
 
 import sociaisIcon from 'src/components/sociaisIcon.vue';
 import sociaisEmail from '../components/sociaisEmail.vue';
+
 import sobreComponent from 'src/components/sobreComponent.vue';
+import aboutComponent from 'src/components/aboutComponent.vue';
+
 import animacaoLoad from '../../public/animacao/animacaoLoad.vue';
 
 export default {
@@ -29,6 +33,7 @@ export default {
     sociaisIcon,
     sociaisEmail,
     sobreComponent,
+    aboutComponent,
     // animacaoLoad,
   }
 }

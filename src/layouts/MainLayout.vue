@@ -3,7 +3,7 @@
 
     <!-- <animacaoLoad /> -->
 
-    <q-header ref="headerL" elevated class="row col-12 col-md-12 headerr ">
+    <q-header class="row col-12 col-md-12 headerr ">
       <q-toolbar class="flex primarioText justify-between">
 
         <q-avatar class="logo">
