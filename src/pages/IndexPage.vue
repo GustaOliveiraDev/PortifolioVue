@@ -2,16 +2,17 @@
   <q-page class="flex flex-center primario ">
     <div class="container">
 
-      <!-- <animacaoLoad /> -->
-
-      <sobreComponent />
-      <aboutComponent />
-      <!-- <sobreComponent />
-      <sobreComponent />
-      <sobreComponent /> -->
-
       <sociaisIcon />
+
+      <apresentacaoComponent />
+      <sobreComponent />
+      <empregosComponents />
+      <projetosComponents />
+      <contatoComponent />
+ 
       <sociaisEmail />
+
+   
 
     </div>
   </q-page>
@@ -22,19 +23,26 @@
 import sociaisIcon from 'src/components/sociaisIcon.vue';
 import sociaisEmail from '../components/sociaisEmail.vue';
 
-import sobreComponent from 'src/components/sobreComponent.vue';
-import aboutComponent from 'src/components/aboutComponent.vue';
 
-import animacaoLoad from '../../public/animacao/animacaoLoad.vue';
+import apresentacaoComponent from 'src/components/apresentacaoComponent.vue';
+import sobreComponent from 'src/components/sobreComponent.vue';
+import empregosComponents from 'src/components/empregosComponents.vue';
+import projetosComponents from '../components/projetosComponents.vue';
+import contatoComponent from '../components/contatoComponent.vue';
+import sociaisHorizontalComponents from 'src/components/sociaisHorizontalComponents.vue';
 
 export default {
   name: 'IndexPage',
   components: {
     sociaisIcon,
-    sociaisEmail,
+
+    apresentacaoComponent,
     sobreComponent,
-    aboutComponent,
-    // animacaoLoad,
+    empregosComponents,
+    projetosComponents,
+    contatoComponent,
+    
+    sociaisEmail,
   }
 }
 </script>

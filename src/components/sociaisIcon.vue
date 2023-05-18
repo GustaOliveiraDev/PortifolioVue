@@ -69,17 +69,9 @@ export default {
 
 @media (max-width: 600px) {
 
-  /* .socialLine {
-    color: #00b4ff;
-  }
-
-  .socialMidia {
-    color: #00b4ff;
-  } */
-
   .containerSocial {
-display: none;
-}
+    display: none;
+  }
 
 }
 </style>

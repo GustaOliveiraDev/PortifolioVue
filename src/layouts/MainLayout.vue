@@ -13,13 +13,14 @@
 
         <nav class="menu">
           <div class="links">
-            <div class="rotas">Sobre</div>
-            <div class="rotas">Expêriencia</div>
-            <div class="rotas">Trabalhos</div>
-            <div class="rotas">Contato</div>
-            <div class="middle">
-              <a class="btn btn4">Currículo</a>
-            </div>
+            <div class="rotas"><a href="#container-about">Sobre</a></div>
+            <div class="rotas"><a href="#conteinerProjetos">Expêriencia</a></div>
+            <div class="rotas"><a href="#container-trabalho">Trabalho</a></div>
+            <div class="rotas"><a href="#containerContato">Contato</a></div>
+
+            <div class="containerBtnCurriculo">
+            <a class="btnLinkCurriculo">Curriculo</a>
+          </div>
           </div>
 
           <div class="toogueMenu">
@@ -33,10 +34,10 @@
     <q-drawer class="drawer" v-model="drawer" :width="200" side="right">
 
       <q-scroll-area class="fit">
-        <q-list >
+        <q-list>
 
-          <div class="middle">
-            <a class="btn btn4">Currículo</a>
+          <div class="containerBtnCurriculo">
+            <a class="btnLinkCurriculo">Curriculo</a>
           </div>
           <template v-for="(menuItem, index) in menuList" :key="index">
             <q-item class="flex intems-center itemDrawer " v-ripple>
@@ -116,6 +117,7 @@ export default {
 
 * {
   font-family: 'Courier Prime', monospace;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -184,7 +186,14 @@ export default {
 
 .rotas {
   padding-right: 25px;
+  transition: 0.5;
   color: white;
+}
+
+.rotas a{
+  color: white;
+  transition: 0.5;
+  text-decoration: none;
 }
 
 .rotas:hover {
@@ -204,42 +213,20 @@ export default {
   filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
 }
 
-
-.btn {
-  position: relative;
+.containerBtnCurriculo {
   display: flex;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
+  justify-content: center;
   border: 1px solid #00b4ff;
   padding: 10px;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: 1s all ease;
+  border-radius: 25px;
+  width: 150px;
+  margin: 25px;
+  cursor: pointer;
 }
 
-.btn::before {
-  background: #00b4ff;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  transition: all 0.6s ease;
-}
 
-.btn4::before {
-  width: 100%;
-  height: 0%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
 
-.btn4:hover::before {
-  height: 380%;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .toogueMenu {
     display: block;
   }
@@ -258,17 +245,17 @@ export default {
   }
 
 
-  .middle {
+  .containerBtnCurriculo {
     display: flex;
     justify-content: center;
-  }
-
-  .btn {
+    border: 1px solid #00b4ff;
+    padding: 10px;
+    border-radius: 25px;
     width: 150px;
     margin: 25px;
-    /* margin-top: 30px;
-    margin-bottom: 150px; */
   }
+
+  .btnLinkCurriculo {}
 
 
 

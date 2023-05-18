@@ -65,15 +65,7 @@ export default {
         display: none;
     }
 
-    /* .socialLineEmail {
-    border-right: 1px solid;
-    height: 200px;
-    color: #00b4ff;
-}
-.socialEmail {
-    height: 150px;
-    color: #00b4ff;
-} */
+
 
 }
 </style>
