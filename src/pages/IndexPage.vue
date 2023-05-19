@@ -9,10 +9,10 @@
       <empregosComponents />
       <projetosComponents />
       <contatoComponent />
- 
+
       <sociaisEmail />
 
-   
+
 
     </div>
   </q-page>
@@ -41,13 +41,15 @@ export default {
     empregosComponents,
     projetosComponents,
     contatoComponent,
-    
+
     sociaisEmail,
   }
 }
 </script>
 <style>
-
+html {
+  scroll-behavior: smooth;
+}
 .container{
   display: flex;
   justify-content: center;

@@ -33,24 +33,25 @@
                     </div>
 
                 </div>
-         
+
 
         </div>
     </div>
 </template>
-  
+
 <script>
 export default {
 
 }
 </script>
-  
+
 <style>
 #container-trabalho {
     height: 80vh;
     width: 85vw;
     display: flex;
     justify-content: center;
+    transition: 0.3s ease;
     align-items: center;
 }
 
@@ -117,4 +118,3 @@ export default {
 
 }
 </style>
-  

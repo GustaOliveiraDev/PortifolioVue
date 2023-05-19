@@ -16,7 +16,7 @@
 
   </div>
 </template>
-  
+
 <script>
 import sociaisHorizontal from 'src/components/sociaisHorizontalComponents.vue'
 export default {
@@ -26,13 +26,14 @@ components: {
 
 }
 </script>
-  
+
 <style>
 #containerContato {
   height: 100vh;
   width: 85vw;
   display: flex;
   justify-content: center;
+  transition: 0.3s ease;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -57,4 +58,3 @@ components: {
 
 }
 </style>
-  

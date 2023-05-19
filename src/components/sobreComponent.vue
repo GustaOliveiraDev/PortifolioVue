@@ -157,12 +157,14 @@ export default {
 @media (max-width: 900px) {
   .container-about {
     flex-direction: column;
+    transition: 0.3s ease;
   }
+
   .tec-container {
-  display: flex;
-  margin-right: 0.5em;
-  
-}
+    display: flex;
+    margin-right: 0.5em;
+
+  }
 
   .conteudoAbout-text {
     width: 85vw;

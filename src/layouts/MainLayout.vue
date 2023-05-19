@@ -13,9 +13,10 @@
 
         <nav class="menu">
           <div class="links">
+            <div class="rotas"><a href="#containerApresentacao">Olá</a></div>
             <div class="rotas"><a href="#container-about">Sobre</a></div>
-            <div class="rotas"><a href="#conteinerProjetos">Expêriencia</a></div>
-            <div class="rotas"><a href="#container-trabalho">Trabalho</a></div>
+            <div class="rotas"><a href="#container-trabalho">Expêriencia</a></div>
+            <div class="rotas"><a href="#conteinerProjetos">Trabalho</a></div>
             <div class="rotas"><a href="#containerContato">Contato</a></div>
 
             <div class="containerBtnCurriculo">
@@ -196,7 +197,7 @@ export default {
   text-decoration: none;
 }
 
-.rotas:hover {
+.rotas a:hover {
   transition: 0.3s;
   cursor: pointer;
   color: #00b4ff;

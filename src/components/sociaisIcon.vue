@@ -3,14 +3,17 @@
 
     <div class="socialMidia">
 
-      <div class="socialIcon">
+      <div class="socialIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
         <q-btn flat round dense icon="fa-brands fa-square-github" />
+      </a>
       </div>
-      <div class="socialIcon">
+      <div class="socialIcon"><a href="https://www.instagram.com/gustvex/" target="_blank">
         <q-btn flat round dense icon="fa-brands fa-square-instagram" />
+      </a>
       </div>
-      <div class="socialIcon">
-        <q-btn flat round dense icon="fa-brands fa-linkedin" />
+      <div class="socialIcon"><a href="www.linkedin.com/in/gustavooliveiradevv" target="_blank">
+          <q-btn flat round dense icon="fa-brands fa-linkedin" />
+        </a>
       </div>
     </div>
 
@@ -48,10 +51,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 10px;
   width: 30px;
   height: 30px;
+}
+
+.socialIcon a {
+text-decoration: none;
+color: white;
 }
 
 .socialLine {
@@ -60,7 +67,7 @@ export default {
   color: white;
 }
 
-.socialIcon:hover {
+.socialIcon a:hover {
   transition: 0.3s;
   padding-bottom: 10px;
   color: #00b4ff;

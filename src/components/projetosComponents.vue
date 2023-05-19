@@ -10,9 +10,10 @@
                     Calculadora
 
                 </div>
-                <div class=" text-normal-projetos">
-                    <q-btn flat round dense icon="fa-brands fa-square-github" />
-                </div>
+                <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
+        <q-icon size="xl" name="fa-brands fa-square-github" />
+      </a>
+    </div>
             </div>
 
         </div>
@@ -27,26 +28,28 @@
                     Relogio
 
                 </div>
-                <div class=" text-normal-projetos">
-                    <q-btn flat round dense icon="fa-brands fa-square-github" />
-                </div>
+                <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
+        <q-icon size="xl" name="fa-brands fa-square-github" />
+      </a>
+    </div>
             </div>
 
         </div>
     </div>
 </template>
-  
+
 <script>
 export default {
 
 }
 </script>
-  
+
 <style>
 #conteinerProjetos {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease;
     height: 100vh;
     width: 85vw;
 }
@@ -78,6 +81,17 @@ export default {
     border-right: 2px solid #00b4ff;
     background-image: url('../../public/imgs/projetos/calculadoraOPACA.png');
     background-position: center;
+}
+
+.projetosIcon a{
+  color: white;
+}
+
+
+.projetosIcon a:hover {
+  transition: 0.3s;
+  color: #00b4ff;
+
 }
 
 .text-titulo-projetos {
@@ -128,13 +142,13 @@ export default {
     }
 
     .cardProjetosCalculadora {
-       
+
         margin-bottom: 1em;
         margin-left: 0;
     }
 
     .cardProjetosRelogio {
-       
+
         margin: 0;
     }
 
@@ -146,4 +160,3 @@ export default {
 
 }
 </style>
-  
