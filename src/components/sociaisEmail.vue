@@ -3,7 +3,7 @@
 
         <div class="socialEmail">
 
-            <div round class="socialTexEmail">
+            <div round class="socialTexEmail" @click="enviarEmail">
                 GustaOliveiraDev@gmail.com
             </div>
 
@@ -19,7 +19,12 @@
   
 <script>
 export default {
-
+    methods: {
+        enviarEmail() {
+            window.location.href = `mailto:?body=Olá, entrei no endereço  e econtrei a norma
+              nº  - MT, gostaria de compartilha-la com você, para acessá-lá clique no link: `;
+        },
+    }
 }
 </script>
   
@@ -44,6 +49,7 @@ export default {
     justify-content: center;
     align-items: center;
     transform: rotate(90deg);
+    cursor: pointer;
     width: 30px;
 }
 

@@ -3,18 +3,25 @@
 
     <div class="socialMidia">
 
-      <div class="socialIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
-        <q-btn flat round dense icon="fa-brands fa-square-github" />
+      <div class="socialIcon"><a @click="enviarEmail" target="_blank">
+      <q-icon size="sm" name="fa-solid fa-square-envelope" />
       </a>
-      </div>
-      <div class="socialIcon"><a href="https://www.instagram.com/gustvex/" target="_blank">
-        <q-btn flat round dense icon="fa-brands fa-square-instagram" />
+    </div>
+
+    <div class="socialIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
+        <q-icon size="sm" name="fa-brands fa-square-github" />
       </a>
-      </div>
-      <div class="socialIcon"><a href="www.linkedin.com/in/gustavooliveiradevv" target="_blank">
-          <q-btn flat round dense icon="fa-brands fa-linkedin" />
-        </a>
-      </div>
+    </div>
+
+    <div class="socialIcon"><a href="https://www.instagram.com/gustvex/" target="_blank">
+        <q-icon size="sm" name="fa-brands fa-square-instagram" />
+      </a>
+    </div>
+
+    <div class="socialIcon"><a href="www.linkedin.com/in/gustavooliveiradevv" target="_blank">
+        <q-icon size="sm" name="fa-brands fa-linkedin" />
+      </a>
+    </div>
     </div>
 
     <div class="socialLine">
@@ -28,7 +35,12 @@
 
 <script>
 export default {
-
+  methods: {
+        enviarEmail() {
+            window.location.href = `mailto:?body=Olá, entrei no endereço  e econtrei a norma
+              nº  - MT, gostaria de compartilha-la com você, para acessá-lá clique no link: `;
+        },
+    }
 }
 </script>
 

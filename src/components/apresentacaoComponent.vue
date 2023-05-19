@@ -1,21 +1,27 @@
 <template>
   <div id="containerApresentacao">
 
-    <div class="text-normal">
-      Meu nome é
-    </div>
-    <div class="text-titulo">
-      Gustavo Oliveira<br>
-     E sou desenvolverdor
-    </div>
+    <transition :duration="1000" appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
+      <div class="paiApresentacao">
 
-    <div class="text-normal">
-  
-      especializado em construsir
-      e projeta experiencias excepcionais!
-    </div>
+        <div class="text-normal">
+          Meu nome é
+        </div>
 
-    <sociaisHorizontal />
+        <div class="text-titulo">
+          Gustavo Oliveira<br>
+          E sou desenvolverdor
+        </div>
+
+        <div class="text-normal">
+          especializado em construsir
+          e projeta experiencias excepcionais!
+        </div>
+
+        <sociaisHorizontal />
+
+      </div>
+    </transition>
 
   </div>
 </template>
@@ -24,8 +30,14 @@
 import sociaisHorizontal from 'src/components/sociaisHorizontalComponents.vue'
 export default {
   components: {
-  sociaisHorizontal,
-}
+    sociaisHorizontal,
+  },
+  data() {
+    return {
+      show: true,
+    }
+  },
+ 
 }
 </script>
 
@@ -37,6 +49,14 @@ export default {
   flex-direction: column;
   height: 100vh;
   width: 85vw;
+}
+
+
+.paiApresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 

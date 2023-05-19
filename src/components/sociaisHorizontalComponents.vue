@@ -1,7 +1,7 @@
 <template>
   <div class="socialApresentacao q-gutter-xs">
 
-    <div class="ApresentacaoIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
+    <div class="ApresentacaoIcon"><a  @click="enviarEmail" target="_blank">
       <q-icon size="xl" name="fa-solid fa-square-envelope" />
       </a>
     </div>
@@ -26,7 +26,12 @@
 
 <script>
 export default {
-
+  methods: {
+        enviarEmail() {
+            window.location.href = `mailto:?body=Olá, entrei no endereço  e econtrei a norma
+              nº  - MT, gostaria de compartilha-la com você, para acessá-lá clique no link: `;
+        },
+    }
 }
 </script>
 

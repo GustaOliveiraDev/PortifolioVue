@@ -61,9 +61,8 @@
       </div>
 
     </div>
-
     <div class="about-container">
-      <img class="about-img" src="../../public/imgs/AdobeStock_550513538_Preview.png">
+      <img class="about-img" src="../../public/imgs/FOTOF.png">
     </div>
 
   </div>
@@ -95,7 +94,6 @@ export default {
 .about-img {
   width: 310px;
   height: 310px;
-
   background-color: #00b4ff;
   box-shadow: 10px 10px 0px #00b4ff;
 }
@@ -155,7 +153,11 @@ export default {
 }
 
 @media (max-width: 900px) {
-  .container-about {
+
+  #container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     transition: 0.3s ease;
   }

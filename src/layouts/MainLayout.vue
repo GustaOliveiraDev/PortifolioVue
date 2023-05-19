@@ -1,31 +1,64 @@
 <template>
   <q-layout>
 
-    <!-- <animacaoLoad /> -->
 
     <q-header class="row col-12 col-md-12 headerr ">
       <q-toolbar class="flex primarioText justify-between">
 
         <q-avatar class="logo">
-          <img src="../../public/imgs/AdobeStock_550513538_Preview.png">
+          <img src="../../public/imgs/LOGOG.png">
 
         </q-avatar>
 
         <nav class="menu">
           <div class="links">
-            <div class="rotas"><a href="#containerApresentacao">Olá</a></div>
-            <div class="rotas"><a href="#container-about">Sobre</a></div>
-            <div class="rotas"><a href="#container-trabalho">Expêriencia</a></div>
-            <div class="rotas"><a href="#conteinerProjetos">Trabalho</a></div>
-            <div class="rotas"><a href="#containerContato">Contato</a></div>
 
-            <div class="containerBtnCurriculo">
-            <a class="btnLinkCurriculo">Curriculo</a>
-          </div>
+            <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
+              <div class="rotas"><a href="#containerApresentacao">Olá</a></div>
+            </transition>
+
+
+            <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
+              <div class="rotas"><a href="#container-about">Sobre</a></div>
+
+            </transition>
+
+
+            <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
+              <div class="rotas"><a href="#container-trabalho">Expêriencia</a></div>
+
+            </transition>
+
+
+            <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
+              <div class="rotas"><a href="#conteinerProjetos">Trabalho</a></div>
+
+            </transition>
+
+
+            <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
+              <div class="rotas"><a href="#containerContato">Contato</a></div>
+
+            </transition>
+
+
+            <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
+
+              <div @click="encaminhePdf()" class="containerBtnCurriculo">
+                <a
+                  href="https://drive.google.com/file/d/1UhfvvZ381JVe-mXCRIETFyrKmVOiZTJj/view?usp=share_link">Curriculo</a>
+              </div>
+            </transition>
+
+
           </div>
 
-          <div class="toogueMenu">
-            <q-btn @click="drawer = !drawer" round icon="menu" />
+          <div class="toogueMenu" @click="drawer = !drawer">
+          
+            <q-icon  size="sm" name="fa-solid fa-bars-staggered"/>
+
+         
+           
           </div>
         </nav>
 
@@ -68,8 +101,6 @@
 <script>
 
 import { ref, } from 'vue'
-import animacaoLoad from '../../public/animacao/animacaoLoad.vue';
-
 const menuList = [
   {
     icon: 'fa-solid fa-address-card',
@@ -96,6 +127,7 @@ const menuList = [
 ]
 
 export default {
+
   setup() {
     let drawer = ref(false)
 
@@ -105,9 +137,7 @@ export default {
     }
   },
 
-  components: {
-    // animacaoLoad,
-  }
+
 
 }
 
@@ -125,6 +155,7 @@ export default {
 .headerr {
   height: 100px;
   position: fixed;
+ 
 
   background-color: #0a192f;
 }
@@ -138,20 +169,7 @@ export default {
   background-color: #0a192f;
 }
 
-.separador {
 
-  background-color: #00b4ff;
-}
-
-.headerRelative {
-  background-color: red;
-}
-
-.logo {
-  height: 50px;
-  width: 50px;
-  background: #00b4ff;
-}
 
 .primario {
   background: #0a192f;
@@ -191,7 +209,7 @@ export default {
   color: white;
 }
 
-.rotas a{
+.rotas a {
   color: white;
   transition: 0.5;
   text-decoration: none;
@@ -206,7 +224,7 @@ export default {
 .logo {
   height: 50px;
   width: 50px;
-  background: #00b4ff;
+  background: #0a192f;
 }
 
 .logo:hover {
@@ -223,13 +241,23 @@ export default {
   width: 150px;
   margin: 25px;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
+
+.containerBtnCurriculo a {
+
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
 @media (max-width: 900px) {
   .toogueMenu {
     display: block;
+    transform: rotate(180deg);
   }
 
   .links {

@@ -10,7 +10,7 @@
                     Calculadora
 
                 </div>
-                <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
+                <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Calculadora-Vuejs" target="_blank">
         <q-icon size="xl" name="fa-brands fa-square-github" />
       </a>
     </div>
@@ -28,7 +28,7 @@
                     Relogio
 
                 </div>
-                <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev" target="_blank">
+                <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Relogio-Analogico-Vuejs" target="_blank">
         <q-icon size="xl" name="fa-brands fa-square-github" />
       </a>
     </div>
@@ -79,7 +79,7 @@ export default {
 .cardRightRelogio {
     margin-bottom: 2em;
     border-right: 2px solid #00b4ff;
-    background-image: url('../../public/imgs/projetos/calculadoraOPACA.png');
+    background-image: url('../../public/imgs/projetos/relogiOpaco1.png');
     background-position: center;
 }
 
@@ -136,7 +136,7 @@ export default {
 
 @media (max-width: 900px) {
 
-    .conteinerProjetos {
+    #conteinerProjetos {
 
         flex-direction: column;
     }
