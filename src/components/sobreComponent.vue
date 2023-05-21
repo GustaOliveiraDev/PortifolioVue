@@ -1,71 +1,78 @@
 <template>
+
   <div id="container-about">
-    <div class="conteudoAbout-text">
 
-      <div class="text-titulo-about">
-        Sobre min
-      </div>
 
-      <div class=" text-normal-about">
-        Olá! Meu nome é Brittany e gosto de criar coisas que vivem na internet.
-        Meu interesse em desenvolvimento web começou em 2012,
+      <div class="conteudoAbout-text">
 
-      </div>
+        <div class="text-titulo-about">
+          Sobre min
+        </div>
 
-      <div class=" text-normal-about">
-        Avançando para hoje, tive o privilégio de trabalhar na uma agência de publicidade,]
-
-      </div>
-
-      <div class=" text-normal-about">
-        eu também recentemente lançou um curso que abrange tudo o
-        que você precisa para criar um aplicativo da web com
-
-      </div>
-
-      <div class="tecnologias-about">
-
-        <div class="tec-container">
-          <div class="tec">
-            <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
-            JavaScript
-          </div>
-
-          <div class="tec">
-            <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
-            Reagir
-          </div>
-
-          <div class="tec">
-            <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
-            TypeScript
-          </div>
+        <div class=" text-normal-about">
+          Olá, sou Gustavo, um programador com experiência em front-end,
+           oferecendo serviços de freelancer para projetos web e mobile.
 
         </div>
 
+        <div class=" text-normal-about">
+          Tenho conhecimentos em JavaScript, Vue.js e React,
+           e experiência em integração de APIs e
+          criação de interfaces de usuário interativas e responsivas.
 
-        <div class="tec-container">
-          <div class="tec">
-            <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
-            WordPress
+        </div>
+
+        <div class=" text-normal-about">
+          Com um portfólio online destacando minhas habilidades,
+         sou comprometido em entregar resultados de alta qualidade e cumprir prazos.
+        </div>
+
+        <div class="tecnologias-about">
+
+          <div class="tec-container">
+            <div class="tec">
+              <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
+              JavaScript
+            </div>
+
+            <div class="tec">
+              <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
+              React
+            </div>
+
+            <div class="tec">
+              <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
+              APIs
+            </div>
+
           </div>
-          <div class="tec">
-            <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
-            Node.js
-          </div>
-          <div class="tec">
-            <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
-            Eleventy
+
+
+          <div class="tec-container">
+            <div class="tec">
+              <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
+              TypeScript
+            </div>
+            <div class="tec">
+              <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
+              Vue
+            </div>
+            <div class="tec">
+              <q-icon class="tec-icon" name="fa-solid fa-circle-right" />
+              Quasar
+            </div>
           </div>
         </div>
+
+      </div>
+      <div class="about-container">
+        <img class="about-img" src="../../public/imgs/FOTOF.png">
       </div>
 
-    </div>
-    <div class="about-container">
-      <img class="about-img" src="../../public/imgs/FOTOF.png">
+
+
     </div>
 
-  </div>
 </template>
 
 <script>
@@ -79,7 +86,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   width: 85vw;
 }
 
@@ -95,6 +102,7 @@ export default {
   width: 310px;
   height: 310px;
   background-color: #00b4ff;
+  transition: 0.3s;
   box-shadow: 10px 10px 0px #00b4ff;
 }
 
@@ -139,7 +147,7 @@ export default {
 .tec {
   display: flex;
   align-items: center;
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
   margin-bottom: 1rem;
 }
 
@@ -196,6 +204,7 @@ export default {
 
   .about-container {
     margin-left: 0;
+    margin-right: 1em;
 
   }
 

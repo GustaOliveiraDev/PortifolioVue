@@ -62,7 +62,7 @@ export default {
 }
 
 .cardProjetosRelogio {
-    margin-left: 10em;
+    margin-left: 5em;
     width: 360px;
     height: 360px;
     display: flex;

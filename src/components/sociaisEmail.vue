@@ -16,7 +16,7 @@
 
     </div>
 </template>
-  
+
 <script>
 export default {
     methods: {
@@ -27,11 +27,11 @@ export default {
     }
 }
 </script>
-  
+
 <style>
 .containerSocialEmail {
     position: fixed;
-    right: 50px;
+    right: 25px;
     bottom: 0px;
     display: flex;
     justify-content: center;

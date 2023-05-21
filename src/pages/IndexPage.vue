@@ -3,13 +3,13 @@
     <div class="container">
 
       <sociaisIcon />
-      
+
       <apresentacaoComponent />
       <sobreComponent />
-      <empregosComponents />
+      <experienciaComponents />
       <projetosComponents />
       <contatoComponent />
-      
+
       </div>
 
       <sociaisEmail />
@@ -25,7 +25,7 @@ import { ref, computed } from 'vue'
 
 import apresentacaoComponent from 'src/components/apresentacaoComponent.vue';
 import sobreComponent from 'src/components/sobreComponent.vue';
-import empregosComponents from 'src/components/empregosComponents.vue';
+import experienciaComponents from 'src/components/experienciaComponents.vue';
 import projetosComponents from '../components/projetosComponents.vue';
 import contatoComponent from '../components/contatoComponent.vue';
 
@@ -37,7 +37,7 @@ export default {
 
     apresentacaoComponent,
     sobreComponent,
-    empregosComponents,
+    experienciaComponents,
     projetosComponents,
     contatoComponent,
 

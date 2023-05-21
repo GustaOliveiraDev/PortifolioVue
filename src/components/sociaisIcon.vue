@@ -47,7 +47,7 @@ export default {
 <style>
 .containerSocial {
   position: fixed;
-  left: 50px;
+  left: 25px;
   bottom: 0px;
   display: flex;
   justify-content: center;
@@ -75,6 +75,7 @@ color: white;
 
 .socialLine {
   border-right: 1px solid;
+  transition: 0.3s;
   height: 200px;
   color: white;
 }

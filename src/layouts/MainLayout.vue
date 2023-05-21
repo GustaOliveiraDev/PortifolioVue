@@ -54,17 +54,16 @@
           </div>
 
           <div class="toogueMenu" @click="drawer = !drawer">
-          
-            <q-icon  size="sm" name="fa-solid fa-bars-staggered"/>
 
-         
-           
+            <q-icon size="sm" name="fa-solid fa-bars-staggered" />
+
+
+
           </div>
         </nav>
 
       </q-toolbar>
     </q-header>
-
     <q-drawer class="drawer" v-model="drawer" :width="200" side="right">
 
       <q-scroll-area class="fit">
@@ -73,19 +72,52 @@
           <div class="containerBtnCurriculo">
             <a class="btnLinkCurriculo">Curriculo</a>
           </div>
-          <template v-for="(menuItem, index) in menuList" :key="index">
-            <q-item class="flex intems-center itemDrawer " v-ripple>
 
-              <q-item-section avatar>
-                <q-icon :name="menuItem.icon" />
-              </q-item-section>
+          <q-item clickable>
+            <q-item-section class="rotasDrawer">
+              <div> <a href="#containerApresentacao">
+                <q-icon size="sm" name="fa-brands fa-square-github" />
+                Olá
+              </a></div>
+            </q-item-section>
+          </q-item>
 
-              <q-item-section>
-                {{ menuItem.label }}
-              </q-item-section>
+          <q-item clickable >
+            <q-item-section>
+              <div class="rotasDrawer"><a href="#container-about">
+                <q-icon size="sm" name="fa-solid fa-address-card" />
+                Sobre
+              </a></div>
+            </q-item-section>
+          </q-item>
 
-            </q-item>
-          </template>
+          <q-item clickable>
+            <q-item-section>
+              <div class="rotasDrawer"><a href="#container-trabalho">
+                <q-icon size="sm" name="fa-solid fa-mountain" />
+                Experiencias
+              </a></div>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable>
+            <q-item-section>
+              <div class="rotasDrawer"><a href="#conteinerProjetos">
+                <q-icon size="sm" name="fa-solid fa-diagram-project" />
+                Projetos
+              </a></div>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable>
+            <q-item-section>
+              <div class="rotasDrawer"><a href="#containerContato">
+                <q-icon size="sm" name="fa-solid fa-address-book" />
+                Contato
+              </a></div>
+            </q-item-section>
+          </q-item>
+
 
         </q-list>
       </q-scroll-area>
@@ -101,30 +133,7 @@
 <script>
 
 import { ref, } from 'vue'
-const menuList = [
-  {
-    icon: 'fa-solid fa-address-card',
-    label: 'Sobre',
-    separator: false
-  },
-  {
-    icon: 'fa-solid fa-mountain',
-    label: 'Expêriencia',
-    separator: false
-  },
-  {
-    icon: 'fa-solid fa-diagram-project',
-    label: 'Trabalhos',
-    separator: false
-  },
-  {
-    icon: 'fa-solid fa-address-book',
-    label: 'Contatos',
-    separator: true
-  },
 
-
-]
 
 export default {
 
@@ -133,7 +142,6 @@ export default {
 
     return {
       drawer,
-      menuList
     }
   },
 
@@ -155,7 +163,7 @@ export default {
 .headerr {
   height: 100px;
   position: fixed;
- 
+
 
   background-color: #0a192f;
 }
@@ -216,6 +224,24 @@ export default {
 }
 
 .rotas a:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: #00b4ff;
+}
+
+.rotasDrawer{
+  color: white;
+  transition: 0.5;
+  text-decoration: none;
+}
+
+.rotasDrawer a{
+  color: white;
+  transition: 0.5;
+  text-decoration: none;
+}
+
+.rotasDrawer a:hover {
   transition: 0.3s;
   cursor: pointer;
   color: #00b4ff;
@@ -264,6 +290,11 @@ export default {
     display: none;
   }
 
+  .logo {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+  }
+
   .itemDrawer {
     display: flex;
     justify-content: center;
@@ -284,7 +315,6 @@ export default {
     margin: 25px;
   }
 
-  .btnLinkCurriculo {}
 
 
 

@@ -43,6 +43,7 @@ export default {
 
 .ApresentacaoIcon a{
   color: white;
+  text-decoration: none;
 }
 
 

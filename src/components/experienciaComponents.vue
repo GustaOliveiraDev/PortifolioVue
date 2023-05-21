@@ -3,9 +3,8 @@
         <div class="conteudoTrabalho">
 
             <div class="titulo-trabalho">
-                Trabalhos
+              Experiencia
             </div>
-
 
                 <div class="trabalhos">
 

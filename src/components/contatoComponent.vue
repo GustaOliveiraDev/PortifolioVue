@@ -7,8 +7,8 @@
       </div>
 
       <div class="text-normal-contato">
-        Um desenvolverdor de software<br>
-        especializado em construsir e projeta<br> experiencias excepcionais!
+        Entre em contato para discutir suas necessidades e trabalharmos juntos em uma solução personalizada.
+         Estou animado para colaborar e transformar suas ideias em realidade!
       </div>
 
 
