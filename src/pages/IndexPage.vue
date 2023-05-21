@@ -4,6 +4,7 @@
 
       <sociaisIcon />
 
+      <headerComponents />
       <apresentacaoComponent />
       <sobreComponent />
       <experienciaComponents />
@@ -23,6 +24,7 @@ import sociaisIcon from 'src/components/sociaisIcon.vue';
 import sociaisEmail from '../components/sociaisEmail.vue';
 import { ref, computed } from 'vue'
 
+import headerComponents from 'src/components/headerComponents.vue'
 import apresentacaoComponent from 'src/components/apresentacaoComponent.vue';
 import sobreComponent from 'src/components/sobreComponent.vue';
 import experienciaComponents from 'src/components/experienciaComponents.vue';
@@ -35,6 +37,7 @@ export default {
   components: {
     sociaisIcon,
 
+    // headerComponents,
     apresentacaoComponent,
     sobreComponent,
     experienciaComponents,
@@ -52,9 +55,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+} */
 </style>

@@ -42,7 +42,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 600px;
   width: 85vw;
 }
 
@@ -66,7 +66,14 @@ export default {
   color: #00b4ff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 350px) {
+
+  #containerApresentacao {
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 85vw;
+}
   .conteudoSobre {
     flex-direction: column;
     text-align: center;
@@ -85,4 +92,5 @@ export default {
   }
 
 }
+
 </style>

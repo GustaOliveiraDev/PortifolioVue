@@ -2,17 +2,17 @@
   <div id="containerContato">
 
 
-      <div class="text-titulo-contato">
-        Contato
-      </div>
+    <div class="text-titulo-contato">
+      Contato
+    </div>
 
-      <div class="text-normal-contato">
-        Entre em contato para discutir suas necessidades e trabalharmos juntos em uma solução personalizada.
-         Estou animado para colaborar e transformar suas ideias em realidade!
-      </div>
+    <div class="text-normal-contato">
+      Entre em contato para discutir suas necessidades e trabalharmos juntos em uma solução personalizada.
+      Estou animado para colaborar e transformar suas ideias em realidade!
+    </div>
 
 
-     <sociaisHorizontal />
+    <sociaisHorizontal />
 
   </div>
 </template>
@@ -20,9 +20,9 @@
 <script>
 import sociaisHorizontal from 'src/components/sociaisHorizontalComponents.vue'
 export default {
-components: {
-  sociaisHorizontal,
-}
+  components: {
+    sociaisHorizontal,
+  }
 
 }
 </script>
@@ -50,11 +50,16 @@ components: {
   color: #00b4ff;
 }
 
-@media (max-width: 600px) {
-  .conteudoSobre {
+@media (max-width: 700px) {
+
+  #containerContato {
     flex-direction: column;
-    width: 80vw;
+    align-items: center;
+
+    height: 400px;
+    width: 85vw;
   }
+
 
 }
 </style>

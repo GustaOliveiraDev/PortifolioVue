@@ -251,6 +251,8 @@ export default {
   height: 50px;
   width: 50px;
   background: #0a192f;
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
 }
 
 .logo:hover {
@@ -290,10 +292,6 @@ export default {
     display: none;
   }
 
-  .logo {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
-    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
-  }
 
   .itemDrawer {
     display: flex;

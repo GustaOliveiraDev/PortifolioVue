@@ -160,7 +160,7 @@ export default {
   color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
   #container-about {
     display: flex;
@@ -169,6 +169,12 @@ export default {
     flex-direction: column;
     transition: 0.3s ease;
   }
+
+  #container-about {
+  height: 1000px;
+  width: 85vw;
+
+}
 
   .tec-container {
     display: flex;
