@@ -16,7 +16,7 @@
       </a>
     </div>
 
-    <div class="ApresentacaoIcon"><a href="www.linkedin.com/in/gustavooliveiradevv" target="_blank">
+    <div class="ApresentacaoIcon"><a href="https://www.linkedin.com/in/gustavo-oliveira-10383b231/" target="_blank">
         <q-icon size="xl" name="fa-brands fa-linkedin" />
       </a>
     </div>

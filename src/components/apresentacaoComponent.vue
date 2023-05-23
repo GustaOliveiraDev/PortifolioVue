@@ -5,15 +5,15 @@
     <div class="paiApresentacao" data-animation="top">
 
       <div class="text-normal">
-        Olá,
+        Olá!
       </div>
 
       <div class="text-titulo">
-        prazer sou o Gustavo.
+        Prazer, sou o Gustavo.
       </div>
 
       <div class="text-normal">
-        Um programador com experiência em front-end
+        Um programador com experiência em desenvolvimento front-end
       </div>
 
       <sociaisHorizontal />

@@ -25,7 +25,7 @@
           HTML CSS JS VUEJS
         </div>
         <div class="text-titulo-projetos">
-          Relogio
+          Relógio
 
         </div>
         <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Relogio-Analogico-Vuejs" target="_blank">

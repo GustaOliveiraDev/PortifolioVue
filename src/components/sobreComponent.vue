@@ -6,7 +6,7 @@
       <div class="conteudoAbout-text">
 
         <div class="text-titulo-about">
-          Sobre min
+          Sobre mim
         </div>
 
         <div class=" text-normal-about">
@@ -119,6 +119,7 @@ export default {
 }
 
 .text-titulo-about {
+  text-align: center;
   font-size: clamp(40px, 40px + 40px, 40px);
   color: #00b4ff;
 }

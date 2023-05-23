@@ -1,14 +1,14 @@
 <template>
   <q-layout>
 
-
-    <q-header class="row col-12 col-md-12 headerr ">
+    <q-header class="row col-12 col-md-12 headerr  justify-center">
       <q-toolbar class="flex primarioText justify-between">
 
-        <q-avatar class="logo">
-          <img src="../../public/imgs/LOGOG.png">
-
-        </q-avatar>
+        <a href="#containerApresentacao">
+        <q-avatar class="logo" >
+            <img src="../../public/imgs/LOGOG.png">
+          </q-avatar>
+        </a>
 
         <nav class="menu">
           <div class="links">
@@ -45,8 +45,7 @@
             <transition appear enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown">
 
               <div @click="encaminhePdf()" class="containerBtnCurriculo">
-                <a
-                  href="https://drive.google.com/file/d/1UhfvvZ381JVe-mXCRIETFyrKmVOiZTJj/view?usp=share_link">Curriculo</a>
+                <a href="/Profile.pdf">Currículo</a>
               </div>
             </transition>
 
@@ -70,7 +69,7 @@
         <q-list>
 
           <div class="containerBtnCurriculo">
-            <a class="btnLinkCurriculo">Curriculo</a>
+            <a href="/Profile.pdf">Currículo</a>
           </div>
 
           <q-item clickable>
@@ -144,7 +143,11 @@ export default {
       drawer,
     }
   },
-
+  methods: {
+    loadPage() {
+      location.reload();
+    }
+  },
 
 
 }
@@ -160,8 +163,12 @@ export default {
   font-size: 16px;
 }
 
+body {
+  background-color: #0a192f;
+}
+
 .headerr {
-  height: 100px;
+  height: 80px;
   position: fixed;
 
 

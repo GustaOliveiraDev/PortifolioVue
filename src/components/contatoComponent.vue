@@ -7,7 +7,7 @@
     </div>
 
     <div class="text-normal-contato">
-      Entre em contato para discutir suas necessidades e trabalharmos juntos em uma solução personalizada.
+      Entre em contato para discutir suas necessidades e trabalharmos juntos em uma solução personalizada.<br>
       Estou animado para colaborar e transformar suas ideias em realidade!
     </div>
 

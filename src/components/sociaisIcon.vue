@@ -18,7 +18,7 @@
       </a>
     </div>
 
-    <div class="socialIcon"><a href="www.linkedin.com/in/gustavooliveiradevv" target="_blank">
+    <div class="socialIcon"><a href="https://www.linkedin.com/in/gustavo-oliveira-10383b231/" target="_blank">
         <q-icon size="sm" name="fa-brands fa-linkedin" />
       </a>
     </div>

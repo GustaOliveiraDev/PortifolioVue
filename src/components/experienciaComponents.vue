@@ -3,14 +3,14 @@
     <div class="conteudoTrabalho">
 
       <div class="titulo-trabalho">
-        Experiencia
+        Experiência
       </div>
 
       <div class="trabalhos">
 
         <div class="text-titulo-trabalho">
           <q-icon class="trabalho-icon" name="fa-solid fa-circle-right" />
-          Freelacers
+          Freelances
         </div>
         <div class="text-normal">
           2021-2023<br>
@@ -24,7 +24,7 @@
 
         <div class="text-titulo-trabalho">
           <q-icon class="trabalho-icon" name="fa-solid fa-circle-right" />
-          Estagio
+          Estágio
         </div>
         <div class="text-normal">
           2021-2023<br>
