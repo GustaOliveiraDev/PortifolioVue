@@ -1,8 +1,9 @@
 <template>
   <q-page class="flex flex-center primario ">
-    <div class="container">
+    
+    <sociaisIcon />
 
-      <sociaisIcon />
+    <div class="container">
 
       <headerComponents />
       <apresentacaoComponent />

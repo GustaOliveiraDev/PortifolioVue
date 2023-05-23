@@ -55,8 +55,8 @@ export default {
   #containerContato {
     flex-direction: column;
     align-items: center;
-
-    height: 400px;
+    margin-bottom: 100px;
+    height: 200px;
     width: 85vw;
   }
 

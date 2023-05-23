@@ -1,46 +1,94 @@
 <template>
   <div id="conteinerProjetos">
-    <div class="cardProjetosCalculadora">
+    <div class="lineProjetos">
 
-      <div class="carLeftCalculadora">
-        <div class=" text-normal-projetos">
-          HTML CSS JS VUEJS
-        </div>
-        <div class="text-titulo-projetos">
-          Calculadora
+      <div class="cardProjetosCalculadora">
 
+        <div class="carLeftCalculadora">
+          <div class=" text-normal-projetos">
+            HTML CSS JS VUEJS
+          </div>
+          <div class="text-titulo-projetos">
+            Calculadora
+
+          </div>
+          <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Calculadora-Vuejs" target="_blank">
+              <q-icon size="xl" name="fa-brands fa-square-github" />
+            </a>
+          </div>
         </div>
-        <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Calculadora-Vuejs" target="_blank">
-            <q-icon size="xl" name="fa-brands fa-square-github" />
-          </a>
-        </div>
+
       </div>
 
+      <div class="cardProjetosRelogio">
+
+        <div class="cardRightRelogio">
+          <div class=" text-normal-projetos">
+            HTML CSS JS VUEJS
+          </div>
+          <div class="text-titulo-projetos">
+            Relógio
+
+          </div>
+          <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Relogio-Analogico-Vuejs" target="_blank">
+              <q-icon size="xl" name="fa-brands fa-square-github" />
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="cardProjetosRelogio">
+    <div class="lineProjetos">
 
-      <div class="cardRightRelogio">
-        <div class=" text-normal-projetos">
-          HTML CSS JS VUEJS
-        </div>
-        <div class="text-titulo-projetos">
-          Relógio
+      <div class="cardProjetosCep">
 
+        <div class="carLeftCep">
+          <div class=" text-normal-projetos">
+            HTML CSS JS REACT
+          </div>
+          <div class="text-titulo-projetos">
+            Buscar cep
+
+          </div>
+          <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/BuscadorCep" target="_blank">
+              <q-icon size="xl" name="fa-brands fa-square-github" />
+            </a>
+          </div>
         </div>
-        <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/Relogio-Analogico-Vuejs" target="_blank">
-            <q-icon size="xl" name="fa-brands fa-square-github" />
-          </a>
-        </div>
+
       </div>
 
+      <div class="cardProjetosPortir">
+
+        <div class="cardRightPortir">
+          <div class=" text-normal-projetos">
+            HTML CSS JS VUEJS QUASAR
+          </div>
+          <div class="text-titulo-projetos">
+            Portifolio
+
+          </div>
+          <div class="projetosIcon"><a href="https://github.com/GustaOliveiraDev/PortifolioVue" target="_blank">
+              <q-icon size="xl" name="fa-brands fa-square-github" />
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: [
+    'tec',
+    'titulo',
+    'img',
+    'git',
 
+  ]
 }
 </script>
 
@@ -49,10 +97,22 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   transition: 0.3s ease;
-  height: 100vh;
+  height: 1000px;
   width: 85vw;
 }
+
+.lineProjetos {
+  display: flex;
+  margin-bottom: 3em;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+
+
 
 .cardProjetosCalculadora {
   width: 360px;
@@ -62,12 +122,31 @@ export default {
 }
 
 .cardProjetosRelogio {
-  margin-left: 5em;
+  margin-left: 3em;
   width: 360px;
   height: 360px;
   display: flex;
   background-color: #0a192f;
 }
+
+.cardProjetosCep {
+  width: 360px;
+  height: 360px;
+  display: flex;
+  background-color: #0a192f;
+}
+
+.cardProjetosPortir {
+  margin-left: 3em;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  background-color: #0a192f;
+}
+
+
+
+
 
 .carLeftCalculadora {
   margin-bottom: 2em;
@@ -82,6 +161,22 @@ export default {
   background-image: url('../../public/imgs/projetos/relogiOpaco1.png');
   background-position: center;
 }
+
+.carLeftCep {
+  margin-bottom: 2em;
+  border-right: 2px solid #00b4ff;
+  background-image: url('../../public/imgs/projetos/busacadorCep.png');
+  background-position: center;
+}
+
+.cardRightPortir {
+  margin-bottom: 2em;
+  border-right: 2px solid #00b4ff;
+  background-image: url('../../public/imgs/projetos/PotifolioVue.png');
+  background-position: center;
+}
+
+
 
 .projetosIcon a {
   color: white;
@@ -131,6 +226,32 @@ export default {
   border-left: 2px solid #00b4ff;
 }
 
+.carLeftCep {
+  margin-left: 0em;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  border-radius: 25px;
+  border-left: 2px solid #00b4ff;
+}
+
+.cardRightPortir {
+  margin-left: 0em;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  border-radius: 25px;
+  border-left: 2px solid #00b4ff;
+}
+
 /* mix-blend-mode: multiply; */
 
 
@@ -139,9 +260,14 @@ export default {
   #conteinerProjetos {
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    height: 1200px;
     width: 85vw;
 
+  }
+
+
+  .lineProjetos {
+    flex-direction: column;
   }
 
   .cardProjetosCalculadora {
@@ -150,12 +276,14 @@ export default {
     margin-bottom: 1em;
     margin-left: 0;
   }
-  .cardRightRelogio {
 
-  width: 250px;
-  height: 250px;
 
-}
+  .carLeftCalculadora {
+
+    width: 250px;
+    height: 250px;
+
+  }
 
   .cardProjetosRelogio {
     width: 250px;
@@ -163,12 +291,45 @@ export default {
     margin: 0;
   }
 
-  .carLeftCalculadora {
 
-  width: 250px;
-  height: 250px;
+  .cardRightRelogio {
 
-}
+    width: 250px;
+    height: 250px;
+
+  }
+
+
+  .cardProjetosCep {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+
+
+  .carLeftCep {
+
+    width: 250px;
+    height: 250px;
+
+  }
+
+  .cardProjetosPortir {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0;
+    margin: 0;
+  }
+
+
+  .cardRightPortir {
+
+    width: 250px;
+    height: 250px;
+
+  }
+
 
 
 
